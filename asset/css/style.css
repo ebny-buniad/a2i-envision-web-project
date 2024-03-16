@@ -32,6 +32,9 @@ body {
 }
 
 /* General CSS Start */
+.logo{
+  width: 60px;
+}
 a {
   text-decoration: none !important;
 }
@@ -317,7 +320,7 @@ input.check-toggle-round-flat:checked+label:after {
 
 /* Hero Section Start */
 #home-hero {
-  background-image: url('../images/hero/scene-id-bg.47da841d.svg');
+  background-image: url('../images/hero/bg-2.svg');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -337,11 +340,6 @@ input.check-toggle-round-flat:checked+label:after {
   width: 50px;
   height: 36px;
   transition: .3s;
-}
-
-carousel-button-position {
-  position: absolute;
-  bottom: 10px;
 }
 
 .carousel-control-button:hover {
@@ -475,6 +473,10 @@ carousel-button-position {
   .slider-all-contents {
     text-align: center;
   }
+  .slider-first-title {
+    font-size: 30px !important;
+    font-weight: 500;
+  }
   .slider-button {
     border: 0px;
     padding: 8px 20px;
@@ -490,12 +492,14 @@ carousel-button-position {
 }
 
 
-
 @media (min-width: 768px) {
   .slider-all-contents {
     text-align: center;
   }
-
+  .slider-first-title {
+    font-size: 50px;
+    font-weight: 600;
+  }
   .slider-button {
     border: 0px;
     padding: 15px 35px;
@@ -506,12 +510,16 @@ carousel-button-position {
     background: linear-gradient(90deg, rgba(49, 235, 142, 1) 0%, rgba(0, 236, 255, 0.8491771708683473) 100%);
   }
 }
+
 
 @media (max-width: 1000px) {
   .slider-all-contents {
     text-align: center;
   }
-
+  .slider-first-title {
+    font-size: 50px;
+    font-weight: 600;
+  }
   .slider-button {
     border: 0px;
     padding: 15px 35px;
@@ -522,14 +530,13 @@ carousel-button-position {
     background: linear-gradient(90deg, rgba(49, 235, 142, 1) 0%, rgba(0, 236, 255, 0.8491771708683473) 100%);
   }
 }
-
 
 
 @media (min-width : 1200px) {
 
   /* Home Page Hero */
   #home-hero {
-    height: 80vh;
+    height: 100vh;
   }
 
   .slider-all-contents {
