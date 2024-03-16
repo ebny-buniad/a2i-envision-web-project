@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Envision</title>
+    <link rel="stylesheet" href="asset/css/style.css">
+
+    <!-- EXTERNAL CSS LINK -->
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body class="d-flex flex-column h-100">
+    <!------------------------------>
+    <!-- Header Start -->
+    <!------------------------------>
+    <header class="main-header position-fixed w-100">
+        <div class="container">
+            <nav class="navbar navbar-light">
+                <div class="container">
+
+                    <span><a class="navbar-brand" href="#"><img src="asset/images/logo.svg" alt=""></a></span>
+
+                    <div class="switch">
+                        <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox">
+                        <label for="language-toggle"></label>
+                        <span class="on">BN</span>
+                        <span class="off">EN</span>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn search-button" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+
+                    <button class="navbar-toggler focus offcanvas-button" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header justify-content-end">
+                            <button type="button" class="btn-close focus" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        About Us <i class="ms-1 fa-solid fa-chevron-down"></i>
+                                    </a>
+                                    <ul class="dropdown-menu border-0 shadow-sm"
+                                        aria-labelledby="navbarDropdownMenuLink">
+                                        <li><a class="dropdown-item" href="#">About Envision</a></li>
+                                        <li><a class="dropdown-item" href="#">Vision, Mission & Values</a></li>
+                                        <li><a class="dropdown-item" href="#">Key Strengths</a></li>
+                                        <li><a class="dropdown-item" href="#">How We Work?</a></li>
+                                        <li><a class="dropdown-item" href="#">Our Success Stories</a></li>
+                                        <li><a class="dropdown-item" href="#">Privacy Policy & Terms of Service</a></li>
+                                        <li><a class="dropdown-item" href="#">Frequently Asked Question (FAQ)</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Services <i class="ms-1 fa-solid fa-chevron-down"></i>
+                                    </a>
+                                    <ul class="dropdown-menu border-0 shadow-sm"
+                                        aria-labelledby="navbarDropdownMenuLink">
+                                        <li><a class="dropdown-item" href="#">Offered Services</a></li>
+                                        <li><a class="dropdown-item" href="#">Services Methodologies</a></li>
+                                        <li><a class="dropdown-item" href="#">Testimonials</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="feature.html">Portfolio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Achievements/Awards</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">News & Events</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Contact</a>
+                                </li>
+                            </ul>
+                            <hr>
+                            <ul class="navbar-nav mt-5">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Expart Pools</a>
+                                </li>
+                                <li class="nav-item">
+                                    <button class="regular-button"><a class="nav-link  " href="#">Submit your
+                                            Interest</a></button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!------------------------------>
+    <!-- Header End  -->
+    <!------------------------------>
+
+
+    <main class="flex-shrink-0">
+
+        <!-- Hero Section Start -->
+
+        <section id="home-hero">
+            <div style="padding-top: 100px;" class="custom-container">
+                <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="3000">
+                            
+                            <div class="row flex-column-reverse flex-lg-row">
+                                <div class="col-12 col-md-12 col-lg-6 slider-all-contents">
+                                    <div class="mt-5">
+                                        <h1 class="slider-first-title">Introduction <br> to Vision 2041</h1>
+                                        <p class="slider-content">As we stand on the cusp of a new era, Bangladesh envisions a future where technology serves as the cornerstone of progress, development, and prosperity.</p>
+                                        <button class="slider-button"><a href="">Read more <i class="ps-3 fa-solid fa-arrow-right"></i></a></button>
+                                    </div>
+                                    <div class="carousel-button-position">
+                                        <button class="carousel-control-button" type="button"
+                                            data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon carousel-icon"
+                                                aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-button" type="button"
+                                            data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon carousel-icon"
+                                                aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-12 col-lg-6">
+                                    <img src="asset/images/hero/CX31QyjTYNjERhisKDE1IF1UIgINtg7NyQmofdB1.png"
+                                        class="d-block slider-image" alt="...">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item" data-bs-interval="3000">
+
+                            <div class="row flex-column-reverse flex-lg-row">
+                                <div class="col-12 col-md-12 col-lg-6 slider-all-contents">
+                                    <div class="mt-5">
+                                        <h1 class="slider-first-title">Introduction <br> to Vision 2041</h1>
+                                        <p class="slider-content">As we stand on the cusp of a new era, Bangladesh envisions a future where technology serves as the cornerstone of progress, development, and prosperity.</p>
+                                        <button class="slider-button"><a href="">Read more <i class="ps-3 fa-solid fa-arrow-right"></i></a></button>
+                                    </div>
+                                    <div class="carousel-button-position">
+                                        <button class="carousel-control-button" type="button"
+                                            data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon carousel-icon"
+                                                aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-button" type="button"
+                                            data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon carousel-icon"
+                                                aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-12 col-lg-6">
+                                    <img src="asset/images/hero/z9hraQA1M90FRVJTUPMmwanQOgi6IKbH5qXGTqKv.png"
+                                        class="d-block slider-image" alt="...">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+
+                            <div class="row flex-column-reverse flex-lg-row">
+                                <div class="col-12 col-md-12 col-lg-6 slider-all-contents">
+                                    <div class="mt-5">
+                                        <h1 class="slider-first-title">Introduction <br> to Vision 2041</h1>
+                                        <p class="slider-content">As we stand on the cusp of a new era, Bangladesh envisions a future where technology serves as the cornerstone of progress, development, and prosperity.</p>
+                                        <button class="slider-button"><a href="">Read more <i class="ps-3 fa-solid fa-arrow-right"></i></a></button>
+                                    </div>
+                                    <div class="carousel-button-position">
+                                        <button class="carousel-control-button" type="button"
+                                            data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon carousel-icon"
+                                                aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-button" type="button"
+                                            data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon carousel-icon"
+                                                aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-12 col-lg-6">
+                                    <img src="asset/images/hero/slide-3.svg"
+                                        class="d-block slider-image" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hero Section End -->
+
+        <!-- Floating Social Media Start -->
+        
+        <section>
+            <div class="floating-social-media">
+                <p><a class="floating-icon" href=""><i style="padding-left: 2px;" class="icon-1 fa-brands fa-facebook-f"></i></a></p>
+                <p><a class="floating-icon" href=""><i class="icon-2 fa-brands fa-instagram"></i></a></p> 
+                <p><a class="floating-icon" href=""><i class="icon-3 fa-brands fa-x-twitter"></i></a></p>
+                <p><a class="floating-icon" href=""><i class="icon-4 fa-brands fa-youtube"></i></a></p>
+            </div>
+        </section>
+
+        <!-- Floating Social Media End -->
+
+        <!-- Hero Section End -->
+        <p style="margin-top: 200px;" class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam sit
+            odio qu alias dolore
+            expedita cumque fugiat. Ducimus ab sint, quis adipisci dolores aspernatur assumenda maxime? Ipsum culpa
+            laboriosam, fuga magnam sequi praesentium delectus iure modi enim. Facere, molestiae quae! Ullam sit debitis
+            ad voluptates ex voluptate libero dolorum totam, quidem fuga ducimus a consequatur? Blanditiis aliquam
+            sapiente quidem dolor doloribus dicta placeat architecto neque mollitia harum? Autem sapiente cupiditate rem
+            quisquam magni nisi officia facilis deserunt ducimus, tempora necessitatibus laudantium quod laboriosam
+            aspernatur soluta minus est tempore quae? In aliquid maiores error molestiae veniam voluptatibus tempore
+            suscipit quae eos, et placeat nisi cum, quisquam rerum debitis ad! Eum dolorem eligendi error incidunt,
+            accusamus eveniet distinctio vero sit? Consectetur eaque minima libero sint sapiente vel hic quidem labore
+            cum suscipit odit nemo esse nam, deserunt pariatur explicabo assumenda dignissimos itaque, ullam aperiam
+            sequi molestias ducimus architecto alias! Magni sapiente omnis sit labore commodi mollitia rem, nemo
+            molestias sint vel iure magnam voluptatem nostrum odit in, architecto porro itaque velit veritatis explicabo
+            voluptates animi, molestiae similique consectetur consequuntur labore vitae magnam laboriosam nemo? Ipsum
+            eius sit rem incidunt quo saepe quaerat laudantium, aliquam ducimus dignissimos. Voluptatibus itaque libero
+            repellat inventore saepe. Dolor inventore quam sit voluptas eius veniam atque iure, consequuntur vitae
+            adipisci libero beatae numquam nesciunt soluta sint vel saepe qui molestiae explicabo recusandae. Maiores
+            accusamus corrupti beatae, minus amet id illo pariatur in sunt magni labore cum! Quisquam, dignissimos! Amet
+            fugit necessitatibus ipsum dolorem aut cumque sit rem alias est, in cum veritatis reprehenderit quaerat
+            itaque vel quas aperiam explicabo earum deleniti aliquam? Corrupti voluptates eveniet molestias corporis
+            animi, repellendus quis sunt fuga ut debitis recusandae omnis molestiae voluptatibus. Veniam, impedit. Velit
+            sint veritatis quidem ea minus iusto molestiae quas molestias, tenetur harum nulla, maxime quam saepe
+            provident distinctio explicabo facilis? Accusantium impedit reprehenderit blanditiis eveniet distinctio
+            voluptas animi similique ipsam laudantium libero alias ab repudiandae sapiente totam beatae expedita
+            praesentium nihil, consectetur maiores neque ea illum fuga! Ex ducimus voluptas deleniti voluptates saepe
+            modi. Officiis non voluptates libero minus iusto sapiente? Quas voluptatem nesciunt repellendus! Accusantium
+            incidunt illo, sint amet unde eveniet dolorem ipsa aperiam exercitationem quas aliquam maxime autem eius,
+            velit et cumque vero. Doloribus rem dicta aperiam maxime numquam, minus facilis consectetur doloremque
+            voluptates impedit commodi dolorem earum eligendi necessitatibus quas, dignissimos deserunt non! Facilis
+            ipsa, quis quam dolor sequi optio reiciendis corrupti consequuntur in soluta reprehenderit perspiciatis
+            dolorem, veritatis recusandae fugiat voluptatibus? Veniam quo excepturi minima! Maiores totam natus omnis
+            quo? Perferendis, quos? Ducimus modi doloribus maxime et aliquam aut nihil perferendis commodi aspernatur
+            minus, maiores magni officia, accusamus sed. Culpa numquam magnam facere, odio quam ex sint aliquid dolorem
+            itaque at sit, corporis aspernatur soluta commodi reprehenderit omnis quidem harum? Quidem nobis ipsa sunt
+            at quibusdam amet repudiandae ipsum error nam dolorem dicta impedit necessitatibus dolorum, tempore
+            consectetur, minima dolore aliquam animi fugiat suscipit quis sapiente eligendi inventore ad. Dolore
+            consectetur sapiente nihil aspernatur voluptatum! Mollitia consectetur delectus, vero consequatur corrupti
+            quod magni unde accusamus dignissimos illo laudantium similique modi excepturi soluta reprehenderit, quos,
+            ipsa labore. Asperiores enim quos ipsa non officia pariatur, nulla quaerat maiores voluptate optio doloribus
+            nemo fugit reiciendis deleniti! Suscipit officia perspiciatis at nihil vero cum doloribus omnis repellat
+            tenetur dolorem aut culpa, est fuga. Accusamus, dolores. Asperiores inventore, similique repellat rem
+            pariatur, itaque atque ab alias mollitia sapiente unde provident nihil accusantium nisi eveniet! Facilis,
+            commodi. Dolores praesentium sapiente cupiditate. Provident magni repellendus eum ad asperiores nam unde
+            quisquam nisi quibusdam facere dolorem vitae doloremque, rem neque, consectetur, quis magnam nostrum! Dicta
+            quia non sed aperiam tenetur modi corrupti necessitatibus quod dolorum! Ad velit, vel nobis suscipit rerum
+            delectus ipsam consequatur nihil expedita architecto numquam quidem ipsa, tenetur amet asperiores ea eos
+            eaque minima minus porro aperiam! Recusandae similique qui tempora ad eos ipsam itaque quam delectus magnam
+            incidunt. Saepe mollitia reprehenderit in, nesciunt temporibus, consequatur, nostrum veritatis accusamus
+            harum adipisci iure ratione commodi. Quas, dolor accusantium? Libero quos nam ullam deserunt iste dolor
+            suscipit magnam veniam ab quis natus, repellat ea dolore, molestiae, odit iusto nihil. Modi atque nam ullam
+            omnis expedita commodi molestiae! Dignissimos, provident natus. Est rem quaerat, fugiat dolores iste
+            deserunt sapiente sint sunt, quibusdam veniam provident magnam nam. Numquam vel dolores sunt hic pariatur
+            recusandae nesciunt magnam quia laboriosam natus esse explicabo placeat, autem debitis quae excepturi illum
+            iste possimus aspernatur odit harum! Numquam accusamus rerum fugiat repudiandae ipsam, recusandae nesciunt
+            consequuntur, quidem nihil tempora illo doloribus eius iusto sunt molestias quos nulla modi. Ipsum nesciunt
+            debitis excepturi blanditiis dolore? Animi modi deserunt blanditiis minus culpa laboriosam consectetur earum
+            fuga sunt ipsa! Animi culpa quod aperiam rerum atque quaerat ad laudantium quisquam reiciendis possimus nisi
+            tempora, iure placeat ea quibusdam. Quisquam totam sed natus dolor eaque illo, dicta corporis at esse
+            eligendi saepe doloremque officiis ullam cupiditate voluptatum facere provident! Laborum repellat culpa,ur
+            iure
+            quo corrupti eum quamus aliquid vel labore nostrum maxime
+            ratione adipisci! Dicta sequi officia veniam aut! Neque, voluptatibus voluptate inventore cupiditate eius
+            voluptates, enim atque eos, reprehenderit odio tempora dicta fuga sapiente?</p>
+
+
+
+
+        <!-- Search Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header border-0">
+                        <button type="button" class="btn-close focus" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2 rounded-pill" type="search" placeholder="Search"
+                                aria-label="Search">
+                            <button class="btn btn-outline-success border-0" type="submit"><i
+                                    class="fa-solid fa-magnifying-glass"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Search Modal End -->
+
+    </main>
+
+
+
+
+
+
+    <!------------------------------>
+    <!-----Footer Start------------->
+    <!------------------------------>
+    <footer class="footer mt-auto py-3 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12">
+                    <div class="footer-logo-col">
+                        <a href="#"><img src="../assets/images/footer/Logo.svg"></a>
+                        <p class="blue-light mb-0 fs-7 fw-500">Rakon is a simple, elegant, and secure way to build your
+                            bitcoin and crypto portfolio.</p>
+                        <div class="callus text-white fw-500 fs-7">
+                            1989 Don Jackson Lane
+                            <div class="blue-light">Call us: <a href="#"
+                                    class="text-warning fw-500 fs-7 text-decoration-none">808-956-9599</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-12 col-sm-12">
+                    <h5 class="text-white">Social</h5>
+                    <ul class="list-unstyled mb-0 pl-0">
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+                <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-12 col-sm-12">
+                    <h5 class="text-white">Company</h5>
+                    <ul class="list-unstyled mb-0 pl-0">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Affiliates</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Legal & Privacy</a></li>
+                    </ul>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12">
+                    <div class="subscribe">
+                        <h5 class="text-white">Subscribe</h5>
+                        <p class="blue-light fw-500">Subscribe to get the latest news form us
+                        </p>
+                        <div class="input-group">
+                            <input type="email" class="form-control br-15" placeholder="Enter email address"
+                                aria-label="Enter email address" aria-describedby="button-addon2">
+                            <button
+                                class="btn btn-warning btn-hover-secondery ms-xxl-2 ms-xl-2 ls-lg-0 ms-md-0 ms-sm-0 ms-0"
+                                type="button" id="button-addon2">Register</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyrights text-center blue-light  fw-500">@<span id="autodate"></span> - All Rights Reserved by
+                <a href="https://adminmart.com/" class="blue-light text-decoration-none">adminmart.com</a> Dsitributed
+                By <a href="https://themewagon.com" class="blue-light text-decoration-none">ThemeWagon</a>
+            </div>
+        </div>
+    </footer>
+    <!------------------------------>
+    <!-------Footer End------------->
+    <!------------------------------>
+
+
+
+
+    <!-- JS EXTERNAL & INTERNAL LINK -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="asset/js/main.js"></script>
+
+</body>
+
+</html>

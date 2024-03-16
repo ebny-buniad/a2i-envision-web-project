@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel Slider</title>
+<style>
+  /* Styles for carousel */
+  .carousel {
+    width: 300px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  .carousel-container {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+
+  .carousel-item {
+    min-width: 100%;
+  }
+
+  /* Styles for buttons */
+  .btn {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    border: none;
+    z-index: 2;
+  }
+
+  .prev {
+    left: 0;
+  }
+
+  .next {
+    right: 0;
+  }
+</style>
+</head>
+<body>
+
+<div class="carousel">
+  <div class="carousel-container">
+    <div class="carousel-item" style="background-color: #ff6347;">Slide 1</div>
+    <div class="carousel-item" style="background-color: #00bfff;">Slide 2</div>
+    <div class="carousel-item" style="background-color: #3cb371;">Slide 3</div>
+  </div>
+  <button class="btn prev" onclick="prevSlide()">Previous</button>
+  <button class="btn next" onclick="nextSlide()">Next</button>
+</div>
+
+<script>
+  const carouselContainer = document.querySelector('.carousel-container');
+  const prevButton = document.querySelector('.prev');
+  const nextButton = document.querySelector('.next');
+  const carouselItems = document.querySelectorAll('.carousel-item');
+  const totalItems = carouselItems.length;
+  let currentIndex = 0;
+
+  function nextSlide() {
+    currentIndex = (currentIndex + 1) % totalItems;
+    updateCarousel();
+  }
+
+  function prevSlide() {
+    currentIndex = (currentIndex - 1 + totalItems) % totalItems;
+    updateCarousel();
+  }
+
+  function updateCarousel() {
+    const offset = -currentIndex * 100;
+    carouselContainer.style.transform = `translateX(${offset}%)`;
+  }
+
+  // Infinite Loop
+  setInterval(nextSlide, 3000); // Change slide every 3 seconds
+</script>
+
+</body>
+</html>
