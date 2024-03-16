@@ -536,9 +536,11 @@ input.check-toggle-round-flat:checked+label:after {
 
   /* Home Page Hero */
   #home-hero {
+    height: 78vh;
+  }
+  #first-section{
     height: 100vh;
   }
-
   .slider-all-contents {
     text-align: start;
   }
