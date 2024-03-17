@@ -679,7 +679,8 @@ input.check-toggle-round-flat:checked+label:after {
 
   /* Home Page Hero */
   #home-hero {
-    height: 78vh;
+    height: 100vh;
+    
   }
 
   #first-section {
