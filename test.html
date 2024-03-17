@@ -3,85 +3,105 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Carousel Slider</title>
-<style>
-  /* Styles for carousel */
-  .carousel {
-    width: 300px;
-    overflow: hidden;
-    position: relative;
-    margin: 0 auto;
-  }
-
-  .carousel-container {
-    display: flex;
-    transition: transform 0.5s ease;
-  }
-
-  .carousel-item {
-    min-width: 100%;
-  }
-
-  /* Styles for buttons */
-  .btn {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    padding: 10px;
-    border: none;
-    z-index: 2;
-  }
-
-  .prev {
-    left: 0;
-  }
-
-  .next {
-    right: 0;
-  }
-</style>
+<title>Card Slide Template</title>
+<link rel="stylesheet" href="styles.css">
 </head>
+<style>
+  body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card-slide {
+  width: 300px;
+  overflow: hidden;
+}
+
+.card {
+  width: 100%;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  transform: translateX(0);
+  transition: transform 0.3s ease;
+}
+
+.next-btn {
+  display: block;
+  margin-top: 20px;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.next-btn:hover {
+  background-color: #0056b3;
+}
+
+</style>
 <body>
 
-<div class="carousel">
-  <div class="carousel-container">
-    <div class="carousel-item" style="background-color: #ff6347;">Slide 1</div>
-    <div class="carousel-item" style="background-color: #00bfff;">Slide 2</div>
-    <div class="carousel-item" style="background-color: #3cb371;">Slide 3</div>
+<div class="container">
+  <div class="card-slide">
+    <div class="card">
+      <h2>Card 1</h2>
+      <p>This is the content of card 1.</p>
+      <button class="next-btn">Next Card</button>
+    </div>
+    <div class="card">
+      <h2>Card 2</h2>
+      <p>This is the content of card 2.</p>
+      <button class="next-btn">Next Card</button>
+    </div>
+    <div class="card">
+      <h2>Card 3</h2>
+      <p>This is the content of card 3.</p>
+      <button class="next-btn">Next Card</button>
+    </div>
   </div>
-  <button class="btn prev" onclick="prevSlide()">Previous</button>
-  <button class="btn next" onclick="nextSlide()">Next</button>
 </div>
 
+<script src="script.js"></script>
+
 <script>
-  const carouselContainer = document.querySelector('.carousel-container');
-  const prevButton = document.querySelector('.prev');
-  const nextButton = document.querySelector('.next');
-  const carouselItems = document.querySelectorAll('.carousel-item');
-  const totalItems = carouselItems.length;
+  document.addEventListener('DOMContentLoaded', function() {
+  const cards = document.querySelectorAll('.card');
+  const button = document.querySelectorAll('.next-btn');
+
   let currentIndex = 0;
 
-  function nextSlide() {
-    currentIndex = (currentIndex + 1) % totalItems;
-    updateCarousel();
+  function slideNext() {
+    if (currentIndex < cards.length - 1) {
+      currentIndex++;
+    } else {
+      currentIndex = 0;
+    }
+    updateSlide();
   }
 
-  function prevSlide() {
-    currentIndex = (currentIndex - 1 + totalItems) % totalItems;
-    updateCarousel();
+  function updateSlide() {
+    const offset = -currentIndex * 100 + '%';
+    document.querySelector('.card-slide').style.transform = `translateX(${offset})`;
   }
 
-  function updateCarousel() {
-    const offset = -currentIndex * 100;
-    carouselContainer.style.transform = `translateX(${offset}%)`;
-  }
+  button.forEach(btn => {
+    btn.addEventListener('click', slideNext);
+  });
+});
 
-  // Infinite Loop
-  setInterval(nextSlide, 3000); // Change slide every 3 seconds
 </script>
-
 </body>
 </html>

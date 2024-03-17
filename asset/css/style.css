@@ -18,23 +18,24 @@ body {
 ::-webkit-scrollbar-track {
   background: #f1f1f1;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgb(110,227,255);
-  background: linear-gradient(180deg, rgba(110,227,255,1) 0%, rgba(0,255,158,1) 100%);
+  background: rgb(110, 227, 255);
+  background: linear-gradient(180deg, rgba(110, 227, 255, 1) 0%, rgba(0, 255, 158, 1) 100%);
   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+  background: #555;
 }
 
 /* General CSS Start */
-.logo{
+.logo {
   width: 60px;
 }
+
 a {
   text-decoration: none !important;
 }
@@ -377,13 +378,108 @@ input.check-toggle-round-flat:checked+label:after {
   color: black;
 }
 
-.icon-4:hover{
+.icon-4:hover {
   color: rgb(255, 28, 46);
 }
+
 /* Hero Section Start */
 
+/* Offered Services Start */
+
+.services-icon {
+  width: 60px;
+  margin: auto;
+  display: block;
+  margin-bottom: 25px;
+}
+
+.services-icon:hover{
+}
+.services-name-title {
+  color: #000000;
+  font-weight: 700;
+}
+
+.service-card{
+  opacity: 0.7;
+  transition: 0.3s;
+  filter: grayscale(100);
+}
+.service-card:hover{
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+  
+  filter: none;
+  opacity: 1;
+}
+/* Offered Services End */
+
+/* Our Mission Start */
+
+#mission-section{
+  background-image: url('../images/home/bg.svg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel button.owl-dot {
+    border: none !important;
+    width: 50px !important;
+    height: 50px !important;
+    background: rgb(84, 255, 169) !important;
+    transition: .3s !important;
+}
+.owl-carousel:hover .owl-nav:hover button.owl-next:hover,
+.owl-carousel:hover .owl-nav:hover button.owl-prev:hover,
+.owl-carousel:hover button.owl-dot:hover{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px !important;
+  background-color: #ffffff !important;
+}
+.slider_carousel .owl-prev, .slider_carousel .owl-next {
+	width: 40px;
+	height: 40px;
+	background: #ffffff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+}
+.slider_carousel .owl-next {
+   right: 50px;
+}
+.slider_carousel .owl-prev {
+   left: 50px;
+}
+/* Our Mission End */
 
 /* ========================= Home Page End ========================= */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -473,10 +569,12 @@ input.check-toggle-round-flat:checked+label:after {
   .slider-all-contents {
     text-align: center;
   }
+
   .slider-first-title {
     font-size: 30px !important;
     font-weight: 500;
   }
+
   .slider-button {
     border: 0px;
     padding: 8px 20px;
@@ -486,7 +584,8 @@ input.check-toggle-round-flat:checked+label:after {
     background: rgb(49, 235, 142);
     background: linear-gradient(90deg, rgba(49, 235, 142, 1) 0%, rgba(0, 236, 255, 0.8491771708683473) 100%);
   }
-  .floating-social-media{
+
+  .floating-social-media {
     right: 10px;
   }
 }
@@ -496,10 +595,12 @@ input.check-toggle-round-flat:checked+label:after {
   .slider-all-contents {
     text-align: center;
   }
+
   .slider-first-title {
     font-size: 50px;
     font-weight: 600;
   }
+
   .slider-button {
     border: 0px;
     padding: 15px 35px;
@@ -516,10 +617,12 @@ input.check-toggle-round-flat:checked+label:after {
   .slider-all-contents {
     text-align: center;
   }
+
   .slider-first-title {
     font-size: 50px;
     font-weight: 600;
   }
+
   .slider-button {
     border: 0px;
     padding: 15px 35px;
@@ -538,9 +641,11 @@ input.check-toggle-round-flat:checked+label:after {
   #home-hero {
     height: 78vh;
   }
-  #first-section{
+
+  #first-section {
     height: 100vh;
   }
+
   .slider-all-contents {
     text-align: start;
   }
