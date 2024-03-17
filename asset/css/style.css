@@ -692,6 +692,44 @@ input.check-toggle-round-flat:checked+label:after {
   }
 
   .slider-first-title {
+    margin-top: 150px;
+    font-size: 70px;
+    font-weight: 700;
+  }
+
+  .slider-content {
+    font-size: 20px;
+  }
+
+  .slider-button {
+    border: 0px;
+    padding: 15px 35px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 50px;
+    background: rgb(49, 235, 142);
+    background: linear-gradient(90deg, rgba(49, 235, 142, 1) 0%, rgba(0, 236, 255, 0.8491771708683473) 100%);
+  }
+}
+
+@media (min-width : 1440px) {
+
+  /* Home Page Hero */
+  #home-hero {
+    height: 100vh;
+    
+  }
+
+  #first-section {
+    height: 100vh;
+  }
+
+  .slider-all-contents {
+    text-align: start;
+  }
+
+  .slider-first-title {
+    margin-top: 50px;
     font-size: 70px;
     font-weight: 700;
   }
