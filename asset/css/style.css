@@ -385,6 +385,9 @@ input.check-toggle-round-flat:checked+label:after {
 /* Hero Section Start */
 
 /* Offered Services Start */
+.bg-light {
+  background-color: #f5f5f5 !important;
+}
 
 .services-icon {
   width: 60px;
@@ -393,29 +396,31 @@ input.check-toggle-round-flat:checked+label:after {
   margin-bottom: 25px;
 }
 
-.services-icon:hover{
-}
 .services-name-title {
+  text-align: center;
   color: #000000;
   font-weight: 700;
 }
 
-.service-card{
+.service-card {
   opacity: 0.7;
   transition: 0.3s;
   filter: grayscale(100);
+  background-color: #f1f1f1 !important;
 }
-.service-card:hover{
+
+.service-card:hover {
   box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
-  
+
   filter: none;
   opacity: 1;
 }
+
 /* Offered Services End */
 
 /* Our Mission Start */
 
-#mission-section{
+#mission-section {
   background-image: url('../images/home/bg.svg');
   background-size: cover;
   background-position: center center;
@@ -425,36 +430,69 @@ input.check-toggle-round-flat:checked+label:after {
 .owl-carousel .owl-nav button.owl-next,
 .owl-carousel .owl-nav button.owl-prev,
 .owl-carousel button.owl-dot {
-    border: none !important;
-    width: 50px !important;
-    height: 50px !important;
-    background: rgb(84, 255, 169) !important;
-    transition: .3s !important;
+  border: none !important;
+  width: 50px !important;
+  height: 50px !important;
+  background: rgb(84, 255, 169) !important;
+  transition: .3s !important;
 }
+
 .owl-carousel:hover .owl-nav:hover button.owl-next:hover,
 .owl-carousel:hover .owl-nav:hover button.owl-prev:hover,
-.owl-carousel:hover button.owl-dot:hover{
+.owl-carousel:hover button.owl-dot:hover {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px !important;
   background-color: #ffffff !important;
 }
-.slider_carousel .owl-prev, .slider_carousel .owl-next {
-	width: 40px;
-	height: 40px;
-	background: #ffffff;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	border-radius: 50%;
-	position: absolute;
-	top: 50%;
-}
+
+.slider_carousel .owl-prev,
 .slider_carousel .owl-next {
-   right: 50px;
+  width: 40px;
+  height: 40px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
 }
+
+.slider_carousel .owl-next {
+  right: 50px;
+}
+
 .slider_carousel .owl-prev {
-   left: 50px;
+  left: 50px;
 }
+
+.mission-card-title {
+  position: absolute;
+  bottom: 20px;
+  left: 15px;
+  color: #ffffffff;
+}
+
 /* Our Mission End */
+
+/* About Envision Start */
+
+/* About Envision End */
+
+/* Envision Awards Start */
+
+/* Envision Awards End */
+
+/* Our Success Stories Start */
+
+#success-stories-section {
+  background-image: url('../images/home/bg-grid.8abf9bc6.svg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/* Our Success Stories End */
+
 
 /* ========================= Home Page End ========================= */
 
@@ -614,7 +652,9 @@ input.check-toggle-round-flat:checked+label:after {
 
 
 @media (max-width: 1000px) {
-  .slider-all-contents {
+
+  .slider-all-contents,
+  .awards-section-title {
     text-align: center;
   }
 
