@@ -609,6 +609,7 @@ input.check-toggle-round-flat:checked+label:after {
   }
 
   .slider-first-title {
+    margin-top: 100px;
     font-size: 30px !important;
     font-weight: 500;
   }
@@ -635,6 +636,7 @@ input.check-toggle-round-flat:checked+label:after {
   }
 
   .slider-first-title {
+    margin-top: 120px;
     font-size: 50px;
     font-weight: 600;
   }
@@ -659,6 +661,7 @@ input.check-toggle-round-flat:checked+label:after {
   }
 
   .slider-first-title {
+    margin-top: 120px;
     font-size: 50px;
     font-weight: 600;
   }
