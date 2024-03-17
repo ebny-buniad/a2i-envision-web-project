@@ -327,12 +327,7 @@ input.check-toggle-round-flat:checked+label:after {
   background-repeat: no-repeat;
 }
 
-.slider-image {
-  width: 98%;
-  padding-bottom: 50px !;
-  margin: auto;
-  display: block;
-}
+
 
 .carousel-control-button {
   border: 1px solid gainsboro;
@@ -609,7 +604,7 @@ input.check-toggle-round-flat:checked+label:after {
   }
 
   .slider-first-title {
-    margin-top: 100px;
+    margin-top: 20px;
     font-size: 30px !important;
     font-weight: 500;
   }
@@ -624,6 +619,13 @@ input.check-toggle-round-flat:checked+label:after {
     background: linear-gradient(90deg, rgba(49, 235, 142, 1) 0%, rgba(0, 236, 255, 0.8491771708683473) 100%);
   }
 
+  .slider-image {
+    padding-top: 100px;
+    width: 80%;
+    margin: auto;
+    display: block;
+  }
+
   .floating-social-media {
     right: 10px;
   }
@@ -636,9 +638,16 @@ input.check-toggle-round-flat:checked+label:after {
   }
 
   .slider-first-title {
-    margin-top: 120px;
+    margin-top: 20px;
     font-size: 50px;
     font-weight: 600;
+  }
+
+  .slider-image {
+    padding-top: 100px;
+    width: 80%;
+    margin: auto;
+    display: block;
   }
 
   .slider-button {
@@ -653,7 +662,7 @@ input.check-toggle-round-flat:checked+label:after {
 }
 
 
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
 
   .slider-all-contents,
   .awards-section-title {
@@ -661,7 +670,7 @@ input.check-toggle-round-flat:checked+label:after {
   }
 
   .slider-first-title {
-    margin-top: 120px;
+    margin-top: 150px;
     font-size: 50px;
     font-weight: 600;
   }
@@ -683,7 +692,7 @@ input.check-toggle-round-flat:checked+label:after {
   /* Home Page Hero */
   #home-hero {
     height: 100vh;
-    
+
   }
 
   #first-section {
@@ -720,7 +729,7 @@ input.check-toggle-round-flat:checked+label:after {
   /* Home Page Hero */
   #home-hero {
     height: 100vh;
-    
+
   }
 
   #first-section {
