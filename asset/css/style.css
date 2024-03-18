@@ -58,7 +58,9 @@ a {
 .slider-button a:hover {
   color: black;
 }
-
+ .accordion-button:focus{
+  box-shadow:none !important;
+ }
 /* General CSS End */
 
 /* ===== Navbar Start ===== */
@@ -322,6 +324,9 @@ input.check-toggle-round-flat:checked+label:after {
 /* Hero Section Start */
 #home-hero {
   background-image: url('../images/hero/bg-2.svg');
+  /* background: radial-gradient(92.39% 92.39% at 36.15% 19.05%, #ffd1b7 0, hsla(0, 0%, 100%, 0) 100%); */
+  /* background: rgb(255,255,255);
+background: linear-gradient(45deg, rgba(255,255,255,0.5998774509803921) 47%, rgba(0,255,201,0.3701855742296919) 76%, rgba(0,255,149,0.5018382352941176) 100%); */
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -480,7 +485,8 @@ input.check-toggle-round-flat:checked+label:after {
 /* Our Success Stories Start */
 
 #success-stories-section {
-  background-image: url('../images/home/bg-grid.8abf9bc6.svg');
+  /* background-image: url('../images/home/bg-grid.8abf9bc6.svg'); */
+  background: radial-gradient(92.39% 92.39% at 36.15% 19.05%, #ffd9c3 0, hsla(0, 0%, 6%, 0) 100%);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
