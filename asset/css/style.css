@@ -597,7 +597,10 @@ input.check-toggle-round-flat:checked+label:after {
 
 /* ##### MOBILE RESPONSIVE MEDIA QURIES START ##### */
 @media (max-width: 576px) {
-
+  .section-title {
+    font-size: 30px !important;
+    font-weight: 500;
+  }
   /* Home Page Hero */
   .slider-all-contents {
     text-align: center;
@@ -633,6 +636,11 @@ input.check-toggle-round-flat:checked+label:after {
 
 
 @media (min-width: 768px) {
+  .section-title {
+    font-size: 50px;
+    font-weight: 600;
+  }
+
   .slider-all-contents {
     text-align: center;
   }
@@ -663,6 +671,10 @@ input.check-toggle-round-flat:checked+label:after {
 
 
 @media (max-width: 1024px) {
+  .section-title {
+    font-size: 50px;
+    font-weight: 600;
+  }
 
   .slider-all-contents,
   .awards-section-title {
@@ -688,11 +700,14 @@ input.check-toggle-round-flat:checked+label:after {
 
 
 @media (min-width : 1200px) {
+  .section-title {
+    font-size: 70px;
+    font-weight: 700;
+  }
 
   /* Home Page Hero */
   #home-hero {
     height: 100vh;
-
   }
 
   #first-section {
@@ -725,6 +740,10 @@ input.check-toggle-round-flat:checked+label:after {
 }
 
 @media (min-width : 1440px) {
+  .section-title {
+    font-size: 70px;
+    font-weight: 700;
+  }
 
   /* Home Page Hero */
   #home-hero {
