@@ -26,10 +26,6 @@ body {
   border-radius: 10px;
 }
 
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
 
 /* General CSS Start */
 .logo {
@@ -496,6 +492,19 @@ background: linear-gradient(45deg, rgba(255,255,255,0.5998774509803921) 47%, rgb
 
 
 /* ========================= Home Page End ========================= */
+
+
+/* ========================= Footer Start =========================== */
+
+.footer-logo{
+  width: 8%;
+  margin: auto;
+  display: block;
+}
+
+/* ========================= Footer End =========================== */
+
+
 
 
 
