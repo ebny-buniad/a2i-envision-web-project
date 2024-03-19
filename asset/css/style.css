@@ -54,9 +54,6 @@ a {
 .slider-button a:hover {
   color: black;
 }
- .accordion-button:focus{
-  box-shadow:none !important;
- }
 /* General CSS End */
 
 /* ===== Navbar Start ===== */
@@ -490,6 +487,14 @@ background: linear-gradient(45deg, rgba(255,255,255,0.5998774509803921) 47%, rgb
 
 /* Our Success Stories End */
 
+/* Faq Start */
+
+.accordion-button:focus{
+  box-shadow:none !important;
+ }
+
+/* Faq End */
+
 
 /* ========================= Home Page End ========================= */
 
@@ -497,7 +502,7 @@ background: linear-gradient(45deg, rgba(255,255,255,0.5998774509803921) 47%, rgb
 /* ========================= Footer Start =========================== */
 
 .footer-logo{
-  width: 8%;
+  width: 120px;
   margin: auto;
   display: block;
 }
@@ -622,7 +627,7 @@ background: linear-gradient(45deg, rgba(255,255,255,0.5998774509803921) 47%, rgb
   }
 
   .slider-first-title {
-    margin-top: 20px;
+    margin-top: 20px !important;
     font-size: 30px !important;
     font-weight: 500;
   }
@@ -661,7 +666,7 @@ background: linear-gradient(45deg, rgba(255,255,255,0.5998774509803921) 47%, rgb
   }
 
   .slider-first-title {
-    margin-top: 20px;
+    margin-top: 50px !important;
     font-size: 50px;
     font-weight: 600;
   }
